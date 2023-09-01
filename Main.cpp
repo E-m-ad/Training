@@ -32,9 +32,6 @@ int main()
     IO();
     ll n, m, a;
     cin >> n >> m >> a;
-    int width = (n % a == 0 ? 0 : 1);
-    int height = (m % a == 0 ? 0 : 1);
-
-    cout << ((n / a) + width) * ((m / a) + height);
+    cout << ceil(n / a) * ceil((m / a));
     return 0;
 }
